@@ -1,0 +1,12 @@
+
+# PyTorch core
+torch>=2.0.0
+torchvision==0.15.2
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+notebook
+jupyterlab
+Pillow
