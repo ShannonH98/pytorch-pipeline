@@ -3,12 +3,11 @@ import os
 import numpy as np
 from PIL import Image
 
-nii_path = "/Users/shannonhenry/Desktop/pytorch-pipeline/nii_converted/201_t2w_tse.nii.gz"  # replace with your file
+nii_path = "/Users/shannonhenry/Desktop/pytorch-pipeline/nii_converted/201_t2w_tse.nii.gz"  
 img = nib.load(nii_path)
 volume = img.get_fdata()
 
 print(volume.shape)  # e.g., (128, 128, 64)
-
 
 
 output_folder = "data/mri/slices"
