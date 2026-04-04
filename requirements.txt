@@ -1,12 +1,26 @@
-
 # PyTorch core
 torch>=2.0.0
-torchvision==0.15.2
+torchvision>=0.15.2
+
+# Data & numerics
 numpy
 pandas
+
+# Image processing
+Pillow
+
+# NIfTI / DICOM
+nibabel
+dicom2nifti
+pydicom
+
+# ML utilities
 scikit-learn
+
+# Visualisation
 matplotlib
 seaborn
+
+# Notebooks
 notebook
 jupyterlab
-Pillow
