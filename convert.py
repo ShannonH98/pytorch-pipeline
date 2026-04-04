@@ -2,8 +2,8 @@ import os
 import nibabel as nib
 import dicom2nifti
 
-dicom_dir = "/Users/shannonhenry/Desktop/pytorch-pipeline/nii"
-output_dir = "/Users/shannonhenry/Desktop/pytorch-pipeline/nii_converted"
+dicom_dir = "/Users/shannonhenry/Desktop/pytorch-pipeline/dicom2"
+output_dir = "/Users/shannonhenry/Desktop/pytorch-pipeline/nii_converted/mri"
 
 os.makedirs(output_dir, exist_ok=True)
 
