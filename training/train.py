@@ -17,7 +17,8 @@ def train():
 
     # 1. Load data
     train_loader, val_loader, test_loader = get_dataloaders()
-    class_names = train_loader.dataset.classes
+    dataset = train_loader.dataset
+    class_names = dataset.dataset.classes if hasattr(dataset, 'dataset') else dataset.classes
     print(f"Classes: {class_names}")
     print(f"Train: {len(train_loader.dataset)} | Val: {len(val_loader.dataset)} | Test: {len(test_loader.dataset)}")
 
